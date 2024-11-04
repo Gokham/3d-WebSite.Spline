@@ -1,0 +1,118 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #FFD2D2; /* Burada Spline arka plan rengini ekleyin */
+    color: #333;
+}
+
+
+/* Header Ayarları */
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3e8e4;
+    position: fixed; /* Header'ı sabit tutar */
+    top: 0;
+    z-index: 1000; /* Header'ın diğer içeriklerin üstünde görünmesini sağlar */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; /* Logonun genişliğini ayarlayın */
+    height: 50px; /* Logonun yüksekliğini ayarlayın */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #bff3f3;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #333;
+    color: #FFD2D2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Banner Ayarları .banner {
+    position: relative;
+    width: 100%;
+    height: 10; 
+    overflow: hidden; 
+    color: #dbdcdc;
+}*/
+
+
+/* Ana İçerik */
+main {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3em;
+    color: #f9e9d4;
+    margin-bottom: 10px;
+}
+
+main h1 span {
+    display: block;
+    font-weight: 100;
+}
+
+main p {
+    margin: 20px 0;
+    color: #f9e9d4;
+}
+
+.subscribe-button {
+    background-color: #ff5722;
+    color: #f9e9d4;
+    border: none;
+    padding: 15px 3px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Diğer Stiller */
+.logo {
+    background-color: #f9e9d4; /* Site arka plan rengiyle aynı renk kodunu kullan */
+    padding: 50px; /* Gerekirse küçük bir iç boşluk ekleyebilirsin */
+}
+
+.navbar a {
+    margin-right: 2px; /* Menüler arasındaki boşluk */
+}
+
+.logo-text {
+    margin-left: 1px; /* Logo ile metin arasındaki boşluk */
+}

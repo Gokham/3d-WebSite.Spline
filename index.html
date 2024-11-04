@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Tarçın Cafe</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <style>
+        /* Ekstra stil ayarları */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #FFD2D2;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            width: 50px; /* Logo boyutu */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .banner spline-viewer{
+            transform: scale(1.2);
+        }
+        .banner{
+            overflow: hidden;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .login-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <header>
+        <div class="logo-container">
+            <img src="cf.gif" alt="Logo" class="logo-image"/>
+            <span class="logo-text">Go.Dev</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Category</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button class="login-button">Login</button>
+    </header>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.36/build/spline-viewer.js" async></script>
+<spline-viewer loading-anim-type="spinner-big-dark" url="https://prod.spline.design/Gl-sC-71aR7Y16uN/scene.splinecode">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAxCAYAAAAsoQwQAAAAAXNSR0IArs4c6QAAD+9JREFUeF6lW4l23EYO
+    JEf7/3+W3VyOE9t7fIg93AegCiigm2MlcaJHzkgaNru6DqCp8/ryv+vQf/7q8v/938VzHPM1vocfb58xX5zyBs/9ePr/+a99b/P+y4vIN/WObLw6Rr7O
+    98b3+TGnDsyGKq/n9+a48pr8bJs7O8fRT/m6z/f5bkD0IgrWewDB3Pu456S3G8Wd7UB6LxhzPHeAJGh3gOhg/w4gspD/GiAywDsQFhZ9DxVhwpYReHPHk
+    LFQG6gKUuc5GK5M7ysxFOAGjL/FkqEoVBtXlsESBchHcx2dIY3OG9nS1dZW3qtVNqVnA04CobLwF9ky2ct5n+PNn/sO9V5Kl7LoRhpvpaoDZ2D4p11f/h
+    tnd7q7eIistDs9nvfIm1rYsQPnhi2TKfP1rW8MlrzyFM4D/U3v4894SHqweMZWrjD1GJO9Oq/PAISotJUzjFylaseQV4ttmnnzkwnMKxa9usiNRLVx64KS
+    z5qSt5Otnd+lKU6VmN6hRl7suC5yIxTtvD7/p4ayM+vpIztQ/B5v7uglK5QNAGGmL3u9BIEJilz71eST7a9CiS/TjXE1lu+MjWMiMHLMMdFHYr5iOAAE83
+    den//dJesOFPcjWQUz2i26NyZtmWiCIaDoTdu5AiHnPor8taZVIb1z0fA9BaQpwZDsW6lqF95TldfmIm1gkJ0BQrAjgElCXp8AiK5yBeXuBmetcgdIY4jMq
+    q98AUUB4/eEHRfO/ZjzEgM9JS35eVs8eP3EpL8blFkjbQLHnXru6pAEaAWDjAjJ+vSlM0SRnfSfBq/mlYy1T92MVI2yATFAITNwVCCSGf4rvI6A4m8FAGdO
+    PAE6jsNBkde52JQhL+RKCLLKmqhHW9y4CBbJZIYyJGLvH5+V8xvKy8paaFgULAj6x9Vqxt0kE7gC7cgvsAYMMTD4ZSAXOLjGqQyxm4nx2JGA+FHZkee8L4Jh
+    F5gLaddJGO+1X1FQ1g4HJ393xEwaIJ82DJHBpgTMNgq1T8SYE6IrKcVR3iQA3jqhmXdgrvNMMByUR/iGE94BU1AMBIBzXcWSJ0CyX3lO6eI9AggFwy44iXIb
+    3QWRWccJU9wvaOLziJ+zIZzX73/cMERXUC8S47p2Aa6Izv2Seb+E3JwAkGDAHADS9YifT0AekyW+/PGZvC5AADvszg2gYIpJFYB5GjByX09hhX/Ue+Xqzjyo
+    GPg+6wtE2w4KvATmXgxRQGSx96RSskWUPbblChCdtElJdaKkDHm6A8NAeRgzhB0KyOPCnBGUAiSkSthh5/AMOwYwdfQPSnAARC7NDoza37YZmv4pJ7lW1cR7
+    sirpwgIPhvxelQlh4rEt/GCJohygiFY6GAQBeo67iUNnQ7Dn4e8bCH5UQASMkCwDpMBwE8ycG+fhHcIQTLqDswHkdD0sH2kRdNONbuDs/CPnkEAQhHmcdUh82
+    Hl9/LiRLFkxkkp83K6FnR0hXQVGnAOQ46x0m8yAITgIjwJjAcSAuuAfwY4AhDOLc7QlOiBh7JSo+BWw4nmCMQRDpWsnW111c21tlQsLN9Vr7x1PkfxUnQUQla
+    zJkoz3AET0sZYYzTU0XsqI4wQ7eCxmCEMeAU6YOI8BAr+KJX3pR9wlM2jm8BEDwH8cR/eOAOGkj9A/dj4y8kjmFMZvBabZbS3cUM8NOIuHfPxtpKyROmgPkgyi
+    7KdciY4nU8gO8fTzNK5Ath4O0OVyBUASDMoW5sxlK2QqQAl2+NE16IlUFceSLHg/SSSsCKYAlHcAUjIFOZ41opIqAeHkD6nKeRzeQkW5FkAkDgpLqs5iusIRIO
+    RumOh6mXtwxdnhTAkQAozHcSgYKVsdkALjWbLlrhxfJxw60lUlrGQG2eDAPAoQpqv0klWyKL/ZrnkBCBMo807K/GiVUPbzmO33jx/E1DVtCFO06QvTjAs9a9PF
+    JSNkpPxDUy8BCRA6QyhVj5Iq1B70DWNEseNbsqMBQjCyOKSRGwgmV/GhcRSWtAp07WstgKSEVaJsqsWElaUb2CK9K+1jVYPRTV0BwZX8A1fpCiyKapGyBJQEhEn
+    rgncYIZiwDAxKlQFBDzGmMPKabNkippEXKxyY4xsKCgBDhiD2NoZgsg0EZ4YDU/GN70XSGnXJTFFZUpVHRjTq7h7lgPY4A5Awcg1G5Slk1PcB8Z+MgWZuhofEm0
+    8UiBH0o2KW+MvYm6ZeYFCyrkeB4qaucRd+EUCQJd8CFJepOJpknVwQUjsGMwCEsWMBRS+GiU2DlwB6kvka5/HzDZDkU7TYG0sATDJFAAGK5/Xx14BbiyIyRM
+    BITUzJUg8hS+LI2qB5iJl6+kd5R4KC+JvpKvtYwY4Aw4AwIzcQApQzgQlAsrnoERJS5UeCUUciH7VIfKUl5qIvCc50lY3NyY5OlcU/UmEqqWo7JYrbHSAEQ
+    oFi2hLa0TPKSzghACUpLoaecvVWpu7GHqkr5gX1h58XMwyAACUAqS+yg0mL7S4A4fdhQLyBIQqKdDCTGeojVQvkdLOP1uRq9L+aj2jcvY4nU6oAxM4IABn
+    eQVHUbC7CyOIw+lmdHSEflK1YU732GJLlciXxV9om7iGQKT+6d3xNQK7j63Fe3UeyyWipzpjhx8dxHgrGW3Qr/f0hWSnPoTUiQIXSAsiuA2y/ye5GyP0
+    ChJQP7AsWQxhxtZzLfje1NQYZ7ZIpWQLMkrTK0DXqHqeyBK2T1uV1GwxQkh1fj+MylnxtLPHY65JVBWkAImAkKG8AIkBpbWWJ+s2ZUSfECsPyL00WV
+    18dPry3G3qBE4t3D4hK1cISoXGCERPm0uXiSw8xs+VOHkt2tEuSEQJGvof1mIV0yNWTycpAucgQAyTAKWNnP8urHvxn1zUAgiF2PK63qIXAkjjX
+    NoroDRZfzLhuvtk5Jr+0rCeuVLsCQ4GoNhQWeLROPmiUgLlL06O1FFpBImBM2dK+Fjed2Ho3edqBgWIR6hlyRXaAIQ5GMMOAcUDM2CFbURySI
+    WRHyJIDYmAkIJCtJlkae7VpiqjUAJkPX4xtBnIGFXWxBGx5irF3hrwChAOUghEpi5V5eohHzp6ykse5I7hG3uNh4FTXlzNKOFKukh1fj
+    8sBMHaUbAUYKlkKSACRgCQwxp4XkqWRi+eqSDxv0nVXlBQAzhIFBJ9th/P6bQAia6zi8ACENHZwUIdk5NQdIOZ0ZYeA4mBIG0Xa3Rl1
+    zT/cM4wV8A5jChlyVfStMBGpLpgBdhgrCcQdIFoMs4BgPaDgNCD0YY0Wu1LlytwjBBEMypduY7wfENHD/owqPQRAoDgTl4OGj
+    P6VA/Hmfazqb/HmYHTuIAaESRaYQdkyQIQhYejWGaBkoUVjgJzCDgJDH0kvkaSZ/dLM+rLNuHtOjF6y9sF0oy894xmLeH
+    5FHfKKIbNAzP31MKFsKLqpE5C8m8IkJUsaitI+KZboDYl/GDPADjd1B4OyFaaezcV8TiJaNB5rCcj5D7AkjD6NnU9Q
+    tDqk9T46IEoEt9s/AcgEw17z2SzvxTVAuErE1Gdx6GEDgECy2EKpMhffT2oz9gKQVnuoZGnlC3pTshyUSFgBiCYs
+    M/Zoy8eVRLIMDLKiyRb8gx6SoDBNSoDJNobkn0oPusdwm7Jyy4LMcA/pTIlE/QGtk3LgzkltNCYYiICMu36Rqt
+    JlTxQDVA+ZLFkNneIbUvU8nmCI1x/OEGFHS1iULAUEDFlAoaHzcRb1yXqGINIuWU9PZB2isVeeG2h6XQu4J
+    GsFw+sQN3UHZHIQDcWKPGJQnSFR0CD2Sh9LmmPy3NUNGLm1W3cSNLYVhNYJwCAoWX9kpY4axOclFoAb
+    urf6yRL4FuXK2IG2Sky8bjmwFqnWSZ8E5ushV/pcsHQ3lCFPMfbseqDgPq9fCcg7QOETAMzW6hvqKbq/n
+    pHwjiXctOrth2jzT0DCSxIUXwjqH2yLgyHwEJcsP0eqWwCBpE770/sNxMQXNUHK+cKOYtizRd1KW7X7agxRQ
+    Np+MiksVBbJ4oMNQTVhyWybOM7qISJRGXnFs2yRstVPQJwp6PSKfHmFjvonn3ZhykJt01gCg3czJzvcQ+id2o3gRM
+    qRoMyWyasn4wGqJqxWrRtI0oo6r1+UITKwF3LFTZbswQg78sFnABNjJTuUDTRzeQ+rK2t0ZYn7VYBCloRUcpcyNkEi9KB
+    t4i3/mPxIXGQKpColSxZfkxlhBdkyC8NXCQsAtk0pFIUuWxJ9+Qj8ef38y8rDFndzluBv1ZfpgLA7Oju9AUiQRA1cQEJBGNOJTR0
+    25BpLwk8ITGdHbSA5IAlKbBcXKMoONM0ySdJDRi9LZCgWnMjrZAu/B2Cjvhw1x5OdXxbV8TNRh/ykgPDKm61MJl3dD5H8zGSVDzyTGNl+
+    Rxt+ea43lpxPZ3qq7h8wp5efeHeArZJMQFUUxkdp0iIgYfQR/fJh4dquzgG8AoR+wfCw8Y9YV7XDmt3e6mO1bm/uwBrJFRCN2SNcZOnRNqiwni
+    UW9icXNfXyMaDhKcKOuKQwJFnCmgT7L0h1Bko9uYgKPdOnyJbDExLpCYxfu+0F9e6cj5oYEiJZnx7Z3Tynbz7YgIS1AAJ/Pq8ff+7VziblIVTVBj1
+    oyFVQfwIksgFql8TGVOSfHuiN2B7I9FMFYwBTdU6PRdE6wXUgk9mG555+A2N45hzETEys0FrSnZtTJbsxx/L8lRSF5SG6x2QM+ddrQOppOxbo+tQJGVLLS
+    gRIpDY8JLR812rAU4pq6pm0YPFcaYQuTTZWkDKT1wnZqr0RiMwqUTtW9GWa0HyXISJXd4D0+BurIG7HPMQAYbLgZSmh2SGRpyfkcchiSP0iQ0
+    hPghCKZoCj7rAp9e/TP6DBELHcT4CsVU3QH8nJ7IANthAoYQ3gW7ohG2XYEEQWFeVYYpeccoIzwouxz02qSL1YWNc/f6q10AZlSUD+
+    AqxtQWI6QMfa6hTPEK+jVNXqglToDSySNQGhu9QxLrEDpJwirkRAuPu6Dy1tYTaGkNnSqqI0LimrFlUtrrWzG6AACM6jNxd/E
+    EBgLDwQ3QCGH1DpgUBw7N+L6KxJFJhcA/hldYUqEOka44klLPO+k0qZSusOTozdV77Xtjt20kWaJKHjJP1QFFh/fQVj
+    E3/zIQdliAKSVSUmYLDCUcVV808SchSSRHJByZ8i1CIrGoEoSkzUrWny3WdxffyeCntKZfvzhw4EFDH//K3JV
+    rZJWoOEAlcN1+yVxdXTF0XfOMqowAuImL/1gQfKld1rMYQDyt5hMIIgNIYoMNrf0T7xC1DiRlJw0hW
+    IbWOJ3cDmgXz9K9j5rEFuUgkrEoykPyYUi24ZhEwwUYmm5QYIgoTIzl+thxj27LC5jeGoqf/
+    woyw76SOpoecDXfo3DkWzzdixeoraYa6C2DjvAZa1yAi4Kf0jaoqclKnr0zqI4/ybQ9
+    1o01XA99sNqWkzusfgtbFLoBSMmuwefbup96T6f75z9rX+dhPV
+    AAAAAElFTkSuQmCC" alt="Spline preview" style="width: 100%; height: 100%;"/></spline-viewer>
+    <!-- Diğer içerikler buraya eklenebilir 
+     .banner {
+            position: relative;
+            width: 100%;
+            height: 500px; /* Banner yüksekliği */
+            overflow: hidden; /* Taşmayı önler */
+        }
+
+        spline-viewer {
+            width: 100%; /* Viewer genişliği */
+            height: 100%; /* Viewer yüksekliği */
+            display: block; /* Görüntüleme ayarı */
+        }-->
+    <main>
+        
+        <!--<p>Like and Subscribe Lun Dev Youtube</p>
+        <button class="subscribe-button"><h1>Tarçın Cafe<br><span>Yeni Nesil Cafe</span></h1>Subscribe</button>-->
+    </main>
+</body>
+</html>
